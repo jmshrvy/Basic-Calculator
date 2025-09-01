@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 body {
     width: 100%;
     height: auto;
+    background-color: oklch(90.3% 0.076 319.62);
 }
 
 .calculator-container {
@@ -29,8 +31,8 @@ body {
     padding: 30px;
     position: relative;
     border-radius: 40px;
-    background-color: rgb(228, 228, 228);
-    box-shadow: 5px 5px 10px 0px gray;
+    background-color: oklch(83.3% 0.145 321.434);
+    box-shadow: 5px 5px 10px 0px oklch(51.8% 0.253 323.949);
     transition: all 0.3s ease-in;
 }
 
@@ -56,11 +58,11 @@ body {
     font-size: 40px;
     padding: 10px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 1px 5px 10px 0px gray;
+    border-radius: 15px;
     text-align: end;
-    color: black;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -9px -9px 9px #ffffff;
+    color: rgb(82, 82, 82);
+    background-color: whitesmoke;
+    box-shadow: inset 5px 5px 5px oklch(51.8% 0.253 323.949), inset -5px -5px 5px #ffffff;
 }
 
 .solar {
@@ -72,7 +74,7 @@ body {
     right: 30px;
     top: 125px;
     border-radius: 10px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -1px -1px 1px #ffffff;
+    box-shadow: inset 8px 8px 8px oklch(51.8% 0.253 323.949), inset -2px -2px 3px #ffffff;
     transition: all 0.2s ease-in;
 }
 
@@ -91,7 +93,7 @@ body {
 .solar-plates {
     width: 20%;
     height: 90%;
-    background-color: rgba(128, 128, 128, 0.126);
+    background-color: oklch(45.2% 0.211 324.591);
 }
 
 .calculator-btn {
@@ -100,13 +102,16 @@ body {
     margin: 5px;
     border: none;
     border-radius: 15px;
+    background-color: oklch(74% 0.238 322.16);
     font-size: 15px;
-    box-shadow: 5px 5px 5px 0px gray;
+    font-weight: 600;
+    color: white;
+    box-shadow: 5px 5px 5px 0px oklch(51.8% 0.253 323.949);
     transition: all 0.1s ease-in;
 }
 
 .third-col, .fourth-col, .fifth-col {
-    padding-top: 62px;
+    padding-top: 68px;
 }
 
 .fifth-col button:nth-child(4){
@@ -115,7 +120,7 @@ body {
 
 .calculator-btn:hover {
     transform: scale(0.95);
-    box-shadow: -1px 0px 10px 0px gray;
+    box-shadow: inset 8px 8px 8px oklch(51.8% 0.253 323.949), inset -2px -2px 3px #ffffff;
 }
 
 .lcd-display:focus {
@@ -135,7 +140,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        box-shadow: 5px 5px 10px 0px gray;
     }
 
     .container-wrapper {
@@ -143,6 +147,7 @@ body {
         height: 550px;
         box-shadow: none;
         transition: all 0.2s ease-in;
+        box-shadow: 5px 5px 10px 0px oklch(51.8% 0.253 323.949);
     }
 
     .display {
