@@ -22,42 +22,43 @@
                 </div>
             </div>
             <div class="btn-col first-col">
-                <button class="calculator-btn">On</button>
-                <button class="calculator-btn">Off</button>
-                <button class="calculator-btn">7</button>
-                <button class="calculator-btn">4</button>
-                <button class="calculator-btn">1</button>
-                <button class="calculator-btn">0</button>
+                <button class="calculator-btn" onclick="powerOn()">On</button>
+                <button class="calculator-btn" onclick="powerOff()">Off</button>
+                <button class="calculator-btn" onclick="buttonValue('7')">7</button>
+                <button class="calculator-btn" onclick="buttonValue('4')">4</button>
+                <button class="calculator-btn" onclick="buttonValue('1')">1</button>
+                <button class="calculator-btn" onclick="buttonValue('0')">0</button>
             </div>
             <div class="btn-col second-col">
-                <button class="calculator-btn">(●'◡'●)</button>
-                <button class="calculator-btn">MRC</button>
-                <button class="calculator-btn">8</button>
-                <button class="calculator-btn">5</button>
-                <button class="calculator-btn">2</button>
-                <button class="calculator-btn">00</button>
+                <button class="calculator-btn" onclick="hapiBtn()" id="hapi">(●'◡'●)</button>
+                <button class="calculator-btn" onclick="clearBtn('clear')">Clear</button>
+                <button class="calculator-btn" onclick="buttonValue('8')">8</button>
+                <button class="calculator-btn" onclick="buttonValue('5')">5</button>
+                <button class="calculator-btn" onclick="buttonValue('2')">2</button>
+                <button class="calculator-btn" onclick="buttonValue('00')">00</button>
             </div>
             <div class="btn-col third-col">
-                <button class="calculator-btn">M-</button>
-                <button class="calculator-btn">9</button>
-                <button class="calculator-btn">6</button>
-                <button class="calculator-btn">3</button>
-                <button class="calculator-btn">.</button>
+                <button class="calculator-btn" onclick="memoryMinus('M-')">M-</button>
+                <button class="calculator-btn" onclick="buttonValue('9')">9</button>
+                <button class="calculator-btn" onclick="buttonValue('6')">6</button>
+                <button class="calculator-btn" onclick="buttonValue('3')">3</button>
+                <button class="calculator-btn" onclick="buttonValue('.')">.</button>
             </div>
             <div class="btn-col fourth-col">
-                <button class="calculator-btn">M+</button>
-                <button class="calculator-btn">√</button>
-                <button class="calculator-btn">÷</button>
-                <button class="calculator-btn">-</button>
-                <button class="calculator-btn">=</button>
+                <button class="calculator-btn" onclick="memoryPlus()">M+</button>
+                    <button class="calculator-btn" onclick="buttonValue('^')">√</button>
+                <button class="calculator-btn" onclick="buttonValue('/')">÷</button>
+                <button class="calculator-btn" onclick="buttonValue('-')">-</button>
+                <button class="calculator-btn" onclick="calculate('=')">=</button>
             </div>
             <div class="btn-col fifth-col">
-                <button class="calculator-btn">GT</button>
-                <button class="calculator-btn">%</button>
-                <button class="calculator-btn">×</button>
-                <button class="calculator-btn">+</button>
+                <button class="calculator-btn" onclick="deleteBtn()">Del</button>
+                <button class="calculator-btn" onclick="buttonValue('%')">%</button>
+                <button class="calculator-btn" onclick="buttonValue('*')">×</button>
+                <button class="calculator-btn" onclick="buttonValue('+')">+</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

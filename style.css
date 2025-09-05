@@ -166,4 +166,16 @@ body {
     .solar {
         transition: all 0.2s ease-in;
     }
+
+    .calculator-btn:hover {
+        background-color: oklch(74% 0.238 322.16);
+        box-shadow: 5px 5px 5px 0px oklch(51.8% 0.253 323.949);
+        transition: none;
+    }
+
+    .calculator-btn:active, .calculator-btn.touch {
+        transform: scale(0.95);
+        box-shadow: inset 8px 8px 8px oklch(51.8% 0.253 323.949), inset -2px -2px 3px #ffffff;
+        transition: none;
+    }
 }
