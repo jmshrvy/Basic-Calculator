@@ -1,5 +1,6 @@
 let display = document.querySelector('.lcd-display');
-let expression = '';
+let buttons = document.querySelectorAll('.calculator-btn');
+let userInput = '';
 let isDisabled = false;
 
 function buttonValue(btnValue) {
@@ -8,23 +9,24 @@ function buttonValue(btnValue) {
 
     if (display.value === '0' || display.value === '') display.value = '';
 
-    expression += btnValue;
-    display.value = expression;
+    userInput += btnValue;
+    display.value = userInput;
 }
 
 function calculate() {
+    if (isDisabled) return;
     try {
-        if (display.value === '^') expression = Math.sqrt(expression);
-        expression = eval(expression);
-        display.value = expression.toString();
+        if (display.value === '^') userInput = Math.sqrt(userInput);
+        userInput = eval(userInput).toFixed(2);
+        display.value = parseFloat(eval(userInput).toString());
     } catch {
         display.value = 'Error';
-        expression = '';
+        userInput = '';
     }
 }
 
 function clearBtn() {
-    expression = '';
+    userInput = '';
     display.value = '';
 }
 
@@ -42,13 +44,14 @@ function powerOff() {
 
 function powerOn() {
     isDisabled = false;
-    expression = '';
+    userInput = '';
     display.placeholder = '0';
 }
 
 function deleteBtn(){
-    expression = expression.slice(0, -1);
-    display.value = expression;
+    if (isDisabled) return;
+    userInput = userInput.slice(0, -1);
+    display.value = userInput;
 }
 
 function buttonAnimation(){

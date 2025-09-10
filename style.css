@@ -76,6 +76,7 @@ body {
     border-radius: 10px;
     box-shadow: inset 8px 8px 8px oklch(51.8% 0.253 323.949), inset -2px -2px 3px #ffffff;
     transition: all 0.2s ease-in;
+    user-select: none;
 }
 
 .solar-panel {
@@ -88,12 +89,14 @@ body {
     margin: auto;
     padding: 2px;
     gap: 2px;
+    user-select: none;
 }
 
 .solar-plates {
     width: 20%;
     height: 90%;
     background-color: oklch(45.2% 0.211 324.591);
+    user-select: none;
 }
 
 .calculator-btn {
@@ -108,6 +111,7 @@ body {
     color: white;
     box-shadow: 5px 5px 5px 0px oklch(51.8% 0.253 323.949);
     transition: all 0.1s ease-in;
+    user-select: none;
 }
 
 .third-col, .fourth-col, .fifth-col {
